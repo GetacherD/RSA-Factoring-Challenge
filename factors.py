@@ -15,11 +15,11 @@ def is_prime(N):
 def factor(N):
 
     if N % 2 == 0:
-        print("{}={}x{}".format(N, N // 2, 2))
+        print("{}={}*{}".format(N, N // 2, 2))
     else:
         for i in range(3, round(math.sqrt(N)) + 1, 2):
             if N % i == 0:
-                print("{}={}x{}".format(N, N // i, i))
+                print("{}={}*{}".format(N, N // i, i))
                 break
 
 
